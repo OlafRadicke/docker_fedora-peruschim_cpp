@@ -65,7 +65,7 @@ RUN rm -Rvf /tmp/tntnet-master /tmp/master.zip
 ##### Compile and install peruschim_cpp #####
 
 WORKDIR /tmp
-RUN  weget https://github.com/OlafRadicke/peruschim_cpp/archive/master.zip
+RUN  wget https://github.com/OlafRadicke/peruschim_cpp/archive/master.zip
 RUN  unzip  master.zip
 WORKDIR /tmp/peruschim_cpp-master
 RUN /usr/bin/ls -lah

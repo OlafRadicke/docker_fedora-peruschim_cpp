@@ -49,7 +49,7 @@ RUN rm -Rvf /tmp/tntdb-master /tmp/master.zip
 
 ##### Compile and install tntdb #####
 WORKDIR /tmp
-RUN  https://github.com/maekitalo/tntnet/archive/master.zip
+RUN  wget https://github.com/maekitalo/tntnet/archive/master.zip
 RUN  unzip  master.zip
 WORKDIR /tmp/tntnet-master
 RUN /usr/bin/ls -lah
